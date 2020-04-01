@@ -1,26 +1,77 @@
 <!DOCTYPE html>
 <html>
+
+<style>
+
+.flagContent {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  flex-direction: column;
+}
+.flagStepperBlue{
+	background-color: blue;
+    width: 300px;
+    height: 40px;
+}
+.flagStepperRed{
+	background-color: red;
+    width: 500px;
+    height: 40px;
+}
+
+.flagStepperPink{
+	background-color: DeepPink;
+    width: 400px;
+    height: 40px;
+}
+
+.flagPipe {
+	background-color: orange;
+    height: 300px;
+    width: 10px;
+    transform:translateY(120px);
+}
+
+.flag  {
+	background-color: grey;
+    height: 40px;
+    width: 80px;
+    transform:translate(35px, 120px);
+}
+
+</style>
 <body>
 
 <div role="toggler">
 	<div>First Toggler</div>
     <button>Change Color</button>
 </div>
-
+<br/>
 <div role="toggler">
     <div>Second Toggler</div>
     <button class="btnChange">Change Color</button>
 </div>
-
+<br/>
 <div role="toggler">
 	<div>Another Toggler</div>
     <button class="btnChange">Change Color</button>
 </div>
-
+<br/>
 <div role="toggler">
 	<div>Some Where Else</div>
     <button class="btnChange">Change Color</button>
 </div>
+
+<div class="flagContent">
+	<div class="flag"></div>
+    <div class="flagPipe"></div>
+	<div class="flagStepperBlue"></div>
+    <div class="flagStepperPink"></div>
+    <div class="flagStepperRed"></div>
+</div>
+
 
 <script>
 
