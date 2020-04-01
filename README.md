@@ -2,7 +2,7 @@
   
   Javascript independent reusable component 
   
-  Falg using css
+  Flag using css
 
 
 [Demo](https://madhavansu.github.io/javascript-component/)
