@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div role="toggler">
+	<div>First Toggler</div>
+    <button>Change Color</button>
+</div>
+
+<div role="toggler">
+    <div>Second Toggler</div>
+    <button class="btnChange">Change Color</button>
+</div>
+
+<div role="toggler">
+	<div>Another Toggler</div>
+    <button class="btnChange">Change Color</button>
+</div>
+
+<div role="toggler">
+	<div>Some Where Else</div>
+    <button class="btnChange">Change Color</button>
+</div>
+
+<script>
+
+let togglerModule = (function(){
+    let toglr = document.querySelectorAll("[role=toggler]");
+   
+    toglr.forEach( tog => {
+    
+    	btnelem = tog.children[1];
+        
+        btnelem.addEventListener("click", function(e){
+            e.target.previousElementSibling.style.color = (e.target.previousElementSibling.style.color == "green") ? "red" : "green"
+        });
+        
+    })
+});
+
+
+togglerModule();
+
+
+</script>
+
+</body>
+</html> 
